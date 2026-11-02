@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>نغم — مساحة تُرى وتُسمع</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@500;600;700&family=Noto+Naskh+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar"><div class="wrap tb">
+ <div class="brand" onclick="go('home')">
+  <svg width="36" height="36" viewBox="0 0 44 44"><circle cx="22" cy="22" r="20" fill="none" stroke="#F4EEE7" stroke-opacity=".6" stroke-width="1.2" stroke-dasharray="2 4"/><circle cx="22" cy="22" r="14" fill="#F4EEE7"/><path d="M14 23 q2-6 4 0 t4 0 t4 0 t4 0" fill="none" stroke="#5B405D" stroke-width="1.7" stroke-linecap="round"/></svg>
+  <div><b>نغم</b><small>منصة تعلّم الفنون</small></div>
+ </div>
+ <nav class="nav" id="nav"></nav>
+ <div class="tb-end" id="tbEnd"></div>
+</div></header>
+<main><div class="wrap" id="app"></div><div class="wrap"><div class="foot"><span>نغم — مساحة تُرى وتُسمع</span><span>وضع المعاينة: البيانات أمثلة، والحجوزات تُحفظ على جهازك فقط.</span></div></div></main>
+<nav class="bnav" id="bnav"></nav>
+<div class="ov" id="ov" onclick="if(event.target===this)closeDlg()"><div class="dlg" id="dlg"></div></div>
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
